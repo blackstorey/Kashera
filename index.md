@@ -3,16 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download POS Application</title>
+    <!-- Load Tailwind CSS for utility-first styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for the Inter font and overall aesthetics */
-        /*
-           To use the Inter font, you should link to it (e.g., from Google Fonts).
-           Without a link, 'Inter' might not be available, and it will fall back to sans-serif.
-           The link to Google Fonts has been added below.
-        */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -20,8 +14,10 @@
 </head>
 <body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
 
+    <!-- Application Download Card -->
     <div class="w-full max-w-xl bg-white p-8 md:p-12 rounded-xl shadow-2xl text-center border border-gray-100">
 
+        <!-- Header and Logo (Optional) -->
         <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-2">
             POS App
         </h1>
@@ -29,6 +25,11 @@
             Point of Sale Application for Android
         </p>
 
+        <!-- Main Call to Action (Download Button) -->
+        <!--
+            We have updated the href to use the relative path 'kashera.apk'.
+            This assumes 'kashera.apk' is in the same folder as this 'index.html' file.
+        -->
         <a id="downloadButton"
            href="kashera.apk"
            download
@@ -41,6 +42,7 @@
             Download App (APK)
         </a>
 
+        <!-- Version Information and Instructions -->
         <div class="mt-8 pt-6 border-t border-gray-200">
             <p class="text-sm text-gray-500 mb-2">
                 Latest Version: <span class="font-semibold text-gray-700">1.0.0</span>
@@ -48,9 +50,20 @@
             <p class="text-xs text-red-500 font-medium bg-red-50 p-2 rounded-lg mb-4 inline-block">
                 Note: Ensure you have "Install from unknown sources" enabled on your Android device.
             </p>
-        </div> </div> <script>
-        console.log("POS App Download Page Initialized.");
-    </script>
+
+            <!-- Troubleshooting Note -->
+            <div class="text-left bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md mt-4">
+                <p class="font-bold text-blue-800 text-sm">Troubleshooting Tip:</p>
+                <ul class="text-blue-700 text-xs list-disc pl-5 mt-1 space-y-1">
+                    <li>Double-check that your file named <span class="font-mono bg-blue-100 px-1 rounded">kashera.apk</span> is uploaded in the **same folder** as your <span class="font-mono bg-blue-100 px-1 rounded">index.html</span> file.</li>
+                    <li>File names on GitHub are **case-sensitive** (e.g., `Kashera.apk` is different from `kashera.apk`).</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
 
 </body>
 </html>
