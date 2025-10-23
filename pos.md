@@ -32,7 +32,7 @@
             The current value is a placeholder.
         -->
         <a id="downloadButton"
-           href="/pos-app-v1.0.apk"
+           href="/kashera.apk"
            download
            class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-xl font-semibold text-white transition-all duration-300
                   bg-green-600 rounded-full shadow-lg hover:bg-green-700 hover:shadow-xl
