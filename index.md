@@ -63,10 +63,6 @@
 
     </div>
 
-    <!-- Simple JavaScript for any future needs (currently just for console clarity) -->
-    <script>
-        console.log("POS App Download Page Initialized.");
-    </script>
 
 </body>
 </html>
