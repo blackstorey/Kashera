@@ -27,11 +27,11 @@
 
         <!-- Main Call to Action (Download Button) -->
         <!--
-            IMPORTANT: Replace the 'href' value below with the actual link to your APK file!
-            The current value is a placeholder.
+            We have updated the href to use the relative path 'kashera.apk'.
+            This assumes 'kashera.apk' is in the same folder as this 'index.html' file.
         -->
         <a id="downloadButton"
-           href="/kashera.apk"
+           href="kashera.apk"
            download
            class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-xl font-semibold text-white transition-all duration-300
                   bg-green-600 rounded-full shadow-lg hover:bg-green-700 hover:shadow-xl
@@ -47,9 +47,18 @@
             <p class="text-sm text-gray-500 mb-2">
                 Latest Version: <span class="font-semibold text-gray-700">1.0.0</span>
             </p>
-            <p class="text-xs text-red-500 font-medium bg-red-50 p-2 rounded-lg inline-block">
+            <p class="text-xs text-red-500 font-medium bg-red-50 p-2 rounded-lg mb-4 inline-block">
                 Note: Ensure you have "Install from unknown sources" enabled on your Android device.
             </p>
+
+            <!-- Troubleshooting Note -->
+            <div class="text-left bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md mt-4">
+                <p class="font-bold text-blue-800 text-sm">Troubleshooting Tip:</p>
+                <ul class="text-blue-700 text-xs list-disc pl-5 mt-1 space-y-1">
+                    <li>Double-check that your file named <span class="font-mono bg-blue-100 px-1 rounded">kashera.apk</span> is uploaded in the **same folder** as your <span class="font-mono bg-blue-100 px-1 rounded">index.html</span> file.</li>
+                    <li>File names on GitHub are **case-sensitive** (e.g., `Kashera.apk` is different from `kashera.apk`).</li>
+                </ul>
+            </div>
         </div>
 
     </div>
