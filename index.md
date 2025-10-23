@@ -53,10 +53,10 @@
 
             <!-- Troubleshooting Note -->
             <div class="text-left bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md mt-4">
-                <p class="font-bold text-blue-800 text-sm">Troubleshooting Tip:</p>
+                <p class="font-bold text-blue-800 text-sm">Kashera Developers Note:</p>
                 <ul class="text-blue-700 text-xs list-disc pl-5 mt-1 space-y-1">
-                    <li>Double-check that your file named <span class="font-mono bg-blue-100 px-1 rounded">kashera.apk</span> is uploaded in the **same folder** as your <span class="font-mono bg-blue-100 px-1 rounded">index.html</span> file.</li>
-                    <li>File names on GitHub are **case-sensitive** (e.g., `Kashera.apk` is different from `kashera.apk`).</li>
+                    <li>We thoroughly enjoyed building a fast, intuitive UI/UX that makes daily transactions a breeze. Our focus was on creating a seamless experience for our clients. 🚀.</li>
+                    <li>It was a great challenge and very rewarding to integrate a reliable local data storage solution in the APK, ensuring the app remains stable and responsive even without a constant internet connection. 💪</li>
                 </ul>
             </div>
         </div>
