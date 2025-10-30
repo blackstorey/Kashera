@@ -10,7 +10,7 @@ Please select a document below to view its contents.
 
 ### **[View our Terms of Service](./TERMS.md)**
 
-### **[Download Kashera POS](./pos.md)**
+### **[Download Kashera POS](./Kashera.apk)**
 
 
 *Last Updated: October 20, 2025*
