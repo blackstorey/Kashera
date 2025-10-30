@@ -2,7 +2,7 @@
 
 This page hosts the Privacy Policy and Terms of Service for our application.
 
-Please select a document below to view its contents.
+Please select a document below to view its contents or download the application.
 
 ---
 
@@ -10,7 +10,7 @@ Please select a document below to view its contents.
 
 ### **[View our Terms of Service](./TERMS.md)**
 
-### **[Download Kashera POS (v11)](https://github.com/blackstorey/Kashera/releases/download/v11/Kashera.apk)**
+### **[⬇️ Download Kashera POS APK (Latest)](https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk)**
 
 
 *Last Updated: October 20, 2025*
