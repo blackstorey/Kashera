@@ -10,18 +10,18 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4 md:p-8">
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-0 sm:p-4">
 
-    <div class="w-full max-w-2xl bg-white p-6 md:p-12 rounded-2xl shadow-2xl text-center border border-gray-100">
+    <div class="w-full sm:max-w-2xl bg-white min-h-screen sm:min-h-0 p-6 md:p-12 sm:rounded-2xl shadow-none sm:shadow-2xl text-center border-0 sm:border border-gray-100 flex flex-col justify-center">
 
         <h1 class="text-4xl md:text-6xl font-extrabold text-indigo-700 mb-4 tracking-tight">
             POS App
         </h1>
-        <p class="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed">
+        <p class="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed px-4">
             Professional Point of Sale Application for Android
         </p>
 
-        <div class="flex flex-col items-center space-y-4">
+        <div class="flex flex-col items-center space-y-4 px-4">
             <a id="downloadButton"
                href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk"
                download
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="mt-12 pt-8 border-t border-gray-100">
+        <div class="mt-12 pt-8 border-t border-gray-100 px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
                 <p class="text-sm text-gray-500">
                     Latest Version: <span class="px-2 py-1 bg-gray-100 rounded font-mono font-bold text-gray-700">1.0.0</span>
