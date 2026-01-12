@@ -38,7 +38,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
                 </svg>
-                <span id="countDisplay">Fetching downloads...</span>
+                <span id="countDisplay">870+ downloads</span>
             </p>
         </div>
 
@@ -62,35 +62,35 @@
     </div>
 
     <script>
-        /**
-         * Fetches the download count for Kashera.apk from the GitHub API
-         */
         async function getDownloadCount() {
             const countDisplay = document.getElementById('countDisplay');
+            // Your starting base number
+            const baseCount = 870; 
+
             try {
-                // Fetch release data from GitHub API
                 const response = await fetch('https://api.github.com/repos/blackstorey/Kashera/releases');
                 const releases = await response.json();
                 
-                let totalDownloads = 0;
+                let githubDownloads = 0;
 
-                // Loop through releases to find the 'Kashera.apk' asset count
                 releases.forEach(release => {
                     release.assets.forEach(asset => {
                         if (asset.name === 'Kashera.apk') {
-                            totalDownloads += asset.download_count;
+                            githubDownloads += asset.download_count;
                         }
                     });
                 });
 
-                countDisplay.textContent = `${totalDownloads.toLocaleString()} people have downloaded this app`;
+                // Add the base count to the GitHub total
+                const total = baseCount + githubDownloads;
+                countDisplay.textContent = `${total.toLocaleString()} people have downloaded this app`;
             } catch (error) {
                 console.error('Error fetching download count:', error);
-                countDisplay.textContent = 'Free to download';
+                // Fallback to showing just the base count if the API fails
+                countDisplay.textContent = `${baseCount.toLocaleString()}+ people have downloaded this app`;
             }
         }
 
-        // Run the function when the page loads
         getDownloadCount();
     </script>
 
