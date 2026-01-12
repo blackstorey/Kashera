@@ -5,7 +5,6 @@
     <title>Download POS Application</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom styles for the Inter font and overall aesthetics */
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -22,17 +21,26 @@
             Point of Sale Application for Android
         </p>
 
-        <a id="downloadButton"
-           href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk"
-           download
-           class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-xl font-semibold text-white transition-all duration-300
-                  bg-green-600 rounded-full shadow-lg hover:bg-green-700 hover:shadow-xl
-                  focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transform hover:scale-105">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Download App (APK)
-        </a>
+        <div class="flex flex-col items-center">
+            <a id="downloadButton"
+               href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk"
+               download
+               class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-xl font-semibold text-white transition-all duration-300
+                     bg-green-600 rounded-full shadow-lg hover:bg-green-700 hover:shadow-xl
+                     focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download App (APK)
+            </a>
+            
+            <p id="downloadStats" class="mt-3 text-sm font-medium text-gray-500 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                </svg>
+                <span id="countDisplay">Fetching downloads...</span>
+            </p>
+        </div>
 
         <div class="mt-8 pt-6 border-t border-gray-200">
             <p class="text-sm text-gray-500 mb-2">
@@ -53,6 +61,38 @@
 
     </div>
 
+    <script>
+        /**
+         * Fetches the download count for Kashera.apk from the GitHub API
+         */
+        async function getDownloadCount() {
+            const countDisplay = document.getElementById('countDisplay');
+            try {
+                // Fetch release data from GitHub API
+                const response = await fetch('https://api.github.com/repos/blackstorey/Kashera/releases');
+                const releases = await response.json();
+                
+                let totalDownloads = 0;
+
+                // Loop through releases to find the 'Kashera.apk' asset count
+                releases.forEach(release => {
+                    release.assets.forEach(asset => {
+                        if (asset.name === 'Kashera.apk') {
+                            totalDownloads += asset.download_count;
+                        }
+                    });
+                });
+
+                countDisplay.textContent = `${totalDownloads.toLocaleString()} people have downloaded this app`;
+            } catch (error) {
+                console.error('Error fetching download count:', error);
+                countDisplay.textContent = 'Free to download';
+            }
+        }
+
+        // Run the function when the page loads
+        getDownloadCount();
+    </script>
 
 </body>
 </html>
