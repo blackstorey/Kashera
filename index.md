@@ -2,9 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Kashera POS</title>
+    <title>Download POS Application</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -13,23 +12,16 @@
 </head>
 <body class="bg-gray-50 flex items-center justify-center min-h-screen p-0 sm:p-4">
 
-    <div class="w-full sm:max-w-2xl bg-white min-h-screen sm:min-h-0 p-8 md:p-12 sm:rounded-3xl shadow-none sm:shadow-2xl text-center border-0 sm:border border-gray-100 flex flex-col justify-center items-center">
+    <div class="w-full sm:max-w-2xl bg-white min-h-screen sm:min-h-0 p-6 md:p-12 sm:rounded-2xl shadow-none sm:shadow-2xl text-center border-0 sm:border border-gray-100 flex flex-col justify-center">
 
-        <div class="mb-6">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-indigo-700 tracking-tighter">
-                Kashera
-            </h1>
-            <div class="h-1.5 w-24 bg-green-500 mx-auto mt-2 rounded-full"></div>
-        </div>
-
-        <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-indigo-700 mb-4 tracking-tight">
             POS App
-        </h2>
-        <p class="text-lg text-gray-500 mb-10 max-w-sm mx-auto">
+        </h1>
+        <p class="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed px-4">
             Professional Point of Sale Application for Android
         </p>
 
-        <div class="w-full flex flex-col items-center space-y-4 px-4">
+        <div class="flex flex-col items-center space-y-4 px-4">
             <a id="downloadButton"
                href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk"
                download
@@ -50,35 +42,36 @@
             </div>
         </div>
 
-        <div class="mt-12 pt-8 border-t border-gray-100 w-full px-4">
-            <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="mt-12 pt-8 border-t border-gray-100 px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
                 <p class="text-sm text-gray-500">
-                    Version <span class="font-bold text-gray-700">1.0.0</span>
+                    Latest Version: <span class="px-2 py-1 bg-gray-100 rounded font-mono font-bold text-gray-700">1.0.0</span>
                 </p>
-                <span class="text-gray-300">|</span>
-                <p class="text-xs text-red-600 font-semibold uppercase tracking-widest">
-                    Android
+                <span class="hidden md:block text-gray-300">|</span>
+                <p class="text-xs text-red-600 font-semibold uppercase tracking-wider">
+                    Android Only
                 </p>
             </div>
 
-            <div class="text-left bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-2xl">
-                <p class="font-bold text-indigo-900 text-base mb-2">Kashera Developers Note:</p>
+            <p class="text-sm text-amber-700 bg-amber-50 p-4 rounded-xl mb-8 border border-amber-100">
+                <strong>Note:</strong> Enable "Install from unknown sources" in your security settings to install the APK.
+            </p>
+
+            <div class="text-left bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl">
+                <p class="font-bold text-indigo-900 text-base mb-2">Developer's Note</p>
                 <ul class="text-indigo-800 text-sm space-y-3">
                     <li class="flex items-start">
                         <span class="mr-2">🚀</span>
-                        <span>We built a fast, intuitive UI/UX to make your daily business transactions a breeze.</span>
+                        <span>Built with a focus on a fast, intuitive UI/UX to make your daily business transactions effortless.</span>
                     </li>
                     <li class="flex items-start">
                         <span class="mr-2">💪</span>
-                        <span>Reliable local data storage ensures stability even without a constant internet connection.</span>
+                        <span>Integrated local data storage ensures the app stays responsive even when you're offline.</span>
                     </li>
                 </ul>
             </div>
-            
-            <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest">
-                Secure APK Download • Unknown Sources Required
-            </p>
         </div>
+
     </div>
 
     <script>
@@ -88,7 +81,7 @@
 
             try {
                 const response = await fetch('https://api.github.com/repos/blackstorey/Kashera/releases');
-                if (!response.ok) throw new Error();
+                if (!response.ok) throw new Error('API limit');
                 
                 const releases = await response.json();
                 let githubDownloads = 0;
@@ -107,7 +100,9 @@
                 countDisplay.textContent = `${baseCount.toLocaleString()}+ people have downloaded this app`;
             }
         }
+
         getDownloadCount();
     </script>
+
 </body>
 </html>
