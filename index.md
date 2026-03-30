@@ -1,8 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download POS Application</title>
+    
+    <title>Kashera POS - Download</title>
+    <meta property="og:title" content="Kashera POS" />
+    <meta property="og:description" content="Streamline your sales and stock management. Download Kashera POS for mobile." />
+    <meta property="og:url" content="https://blackstorey.github.io/Kashera/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://blackstorey.github.io/Kashera/icon.png" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -15,7 +23,7 @@
     <div class="w-full sm:max-w-2xl bg-white min-h-screen sm:min-h-0 p-6 md:p-12 sm:rounded-2xl shadow-none sm:shadow-2xl text-center border-0 sm:border border-gray-100 flex flex-col justify-center">
 
         <h1 class="text-4xl md:text-6xl font-extrabold text-indigo-700 mb-4 tracking-tight">
-            POS App
+            Kashera POS
         </h1>
         <p class="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed px-4">
             Professional Point of Sale Application for Android
