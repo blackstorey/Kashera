@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-gray-50 flex items-center justify-center min-h-screen p-0 sm:p-4">
@@ -46,7 +44,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
-                <span id="countDisplay" class="text-sm md:text-base">870+ active installations</span>
+                <span id="countDisplay" class="text-sm md:text-base">870+ people have downloaded this app</span>
             </div>
         </div>
 
@@ -96,15 +94,16 @@
 
                 releases.forEach(release => {
                     release.assets.forEach(asset => {
-                        if (asset.name.toLowerCase().includes('kashera')) {
-                            githubDownloads += asset.download_count;
-                        }
+                        // This counts any file in your releases
+                        githubDownloads += asset.download_count;
                     });
                 });
 
+                // If githubDownloads is 0, it will just show 870
                 const total = baseCount + githubDownloads;
                 countDisplay.textContent = `${total.toLocaleString()} people have downloaded this app`;
             } catch (error) {
+                // Fallback text if the GitHub API is busy
                 countDisplay.textContent = `${baseCount.toLocaleString()}+ people have downloaded this app`;
             }
         }
