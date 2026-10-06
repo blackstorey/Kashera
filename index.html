@@ -6,7 +6,7 @@
     
     <title>Kashera POS | Simple POS for Small Food Businesses</title>
     <meta property="og:title" content="Kashera POS | Simple POS for Small Food Businesses" />
-    <meta property="og:description" content="Streamline your sales, stock, and recipes. Download Kashera POS for Android." />
+    <meta property="og:description" content="Track sales, manage stock and run your shop from one simple system. Download Kashera POS for Android." />
     <meta property="og:url" content="https://blackstorey.github.io/Kashera/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://blackstorey.github.io/Kashera/icon.png" />
@@ -14,161 +14,171 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <header class="sticky top-0 z-50 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <span class="text-2xl font-black tracking-tight text-indigo-600">Kashera</span>
-                <span class="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold text-gray-600 bg-gray-100 rounded-full">POS</span>
+                <div class="w-8 h-8 bg-slate-950 rounded-xl flex items-center justify-center shadow-sm">
+                    <div class="flex space-x-1">
+                        <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
+                    </div>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-900 font-heading">Kashera POS</span>
             </div>
             <a href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk" 
                download
-               class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full transition-all duration-200 shadow-sm hover:shadow">
+               class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-all duration-200 shadow-sm hover:shadow">
                 Download APK
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-12 pb-16 md:pt-20 md:pb-24 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+    <section class="pt-12 pb-16 md:pt-16 md:pb-24 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        
+        <!-- App Logo Icon -->
+        <div class="mb-8 flex justify-center">
+            <div class="w-24 h-24 bg-slate-950 rounded-[28px] shadow-xl flex flex-col items-center justify-between p-4 border border-slate-800">
+                <div class="w-14 h-10 bg-white rounded-lg mt-1 flex items-center justify-center space-x-1.5">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                </div>
+                <div class="w-12 h-2.5 bg-slate-200 rounded-sm mb-1"></div>
+            </div>
+        </div>
+
         <!-- Target Badge -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/60 text-emerald-800 text-xs sm:text-sm font-semibold mb-6">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
             </span>
             Built for Food Business Entrepreneurs
         </div>
 
-        <!-- Headline & Subheading -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-            Simple Point of Sale Software for <span class="text-indigo-600">Small Food Businesses</span>
+        <!-- Headline & Subheading (Matching App Screen) -->
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-950 tracking-tight leading-tight max-w-3xl mx-auto mb-4 font-heading">
+            Run Your Shop Smarter
         </h1>
-        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Manage your sales, track inventory down to ingredients, and run your kitchen effortlessly on Android phones and tablets.
+        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Track sales, manage stock and run your shop from one simple system. Built for Android phones and tablets.
         </p>
 
-        <!-- Primary CTA Area -->
-        <div class="flex flex-col items-center justify-center space-y-3 mb-12">
+        <!-- Primary Actions -->
+        <div class="flex flex-col items-center justify-center space-y-4 mb-10">
             <a id="downloadButton"
                href="https://github.com/blackstorey/Kashera/releases/latest/download/Kashera.apk"
                download
-               class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-2xl shadow-lg hover:shadow-indigo-200 transition-all duration-200 transform hover:-translate-y-0.5">
+               class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full shadow-lg shadow-emerald-600/20 transition-all duration-200 transform hover:-translate-y-0.5">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Download for Android (APK)
+                Download App (APK)
             </a>
 
-            <!-- Download Counter & Device Tag -->
-            <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-gray-500 font-medium">
-                <span class="flex items-center">
-                    <svg class="w-4 h-4 text-green-500 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    Android Phones & Tablets
-                </span>
-                <span class="text-gray-300 hidden sm:inline">•</span>
+            <!-- Download Counter -->
+            <div class="flex items-center justify-center space-x-2 text-sm text-slate-500 font-medium">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
                 <span id="countDisplay">870+ active downloads</span>
             </div>
         </div>
 
         <!-- Price Banner -->
-        <div class="inline-flex flex-col sm:flex-row items-center justify-center bg-white border border-gray-200 shadow-sm rounded-2xl px-6 py-3.5 gap-2 text-sm">
-            <span class="font-bold text-gray-900">14-Day Free Trial</span>
-            <span class="hidden sm:inline text-gray-300">|</span>
-            <span class="text-gray-600">Then <strong class="text-indigo-600 font-extrabold text-base">R249</strong> / month</span>
+        <div class="inline-flex flex-col sm:flex-row items-center justify-center bg-white border border-slate-200 shadow-sm rounded-2xl px-6 py-3.5 gap-2 text-sm">
+            <span class="font-bold text-slate-900">Start 14-Day Free Trial</span>
+            <span class="hidden sm:inline text-slate-300">|</span>
+            <span class="text-slate-600">Then <strong class="text-emerald-700 font-extrabold text-base">R249</strong> / month</span>
         </div>
     </section>
 
     <!-- Target Audience Pills -->
-    <section class="py-8 bg-white border-y border-gray-100">
+    <section class="py-8 bg-white border-y border-slate-200/60">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Tailored for your business</p>
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Ideal for your business</p>
             <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Food Businesses</span>
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Food Trucks</span>
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Mobile Kitchens</span>
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Takeaways</span>
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Kota Shops</span>
-                <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-sm font-semibold text-gray-700">Spaza Shops</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Food Businesses</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Food Trucks</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Mobile Kitchens</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Takeaways</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Kota Shops</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm font-medium text-slate-700">Spaza Shops</span>
             </div>
         </div>
     </section>
 
-    <!-- What It Does / Feature Grid -->
+    <!-- Features Section -->
     <section class="py-16 md:py-24 max-w-5xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Everything you need to run your shop</h2>
-            <p class="text-gray-500 mt-2">Designed specifically for fast-paced food environments.</p>
+            <h2 class="text-3xl font-bold text-slate-950 tracking-tight font-heading">Everything you need to run your shop</h2>
+            <p class="text-slate-500 mt-2">Designed specifically for fast-paced food environments.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Feature Card 1 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">💳</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Fast Checkout</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Process sales instantly with an intuitive interface built to keep order queues moving.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">💳</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Fast Checkout</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Process sales instantly with an intuitive layout designed to keep lines moving.</p>
             </div>
 
-            <!-- Feature Card 2 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">🥬</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Ingredient Stock</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Track raw stock levels automatically as meals and combos are sold.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">🥬</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Ingredient Stock</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Track raw stock levels automatically as meals and orders are fulfilled.</p>
             </div>
 
-            <!-- Feature Card 3 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">📖</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Recipe Management</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Link items to ingredients (e.g., bread, patties, cheese) for automatic inventory deductions.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">📖</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Recipe Management</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Link menu items to ingredients for automatic inventory deduction per sale.</p>
             </div>
 
-            <!-- Feature Card 4 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">👥</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Staff Roles</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Manage cashier permissions, require PIN codes, and protect your store settings.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">👥</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Staff & Cashier PINs</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Protect your settings with manager authorization PINs and staff permissions.</p>
             </div>
 
-            <!-- Feature Card 5 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">📋</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Customer Credit</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Log customer credit balance securely and keep track of pending payments.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">📋</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Customer Credit</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Track customer credit accounts securely and keep accurate tab balances.</p>
             </div>
 
-            <!-- Feature Card 6 -->
-            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-gray-200 transition-all">
-                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 text-xl">📊</div>
-                <h3 class="font-bold text-gray-900 text-lg mb-1">Sales Reports</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">View daily totals, top-performing food items, and track your profit margins.</p>
+            <div class="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:border-emerald-500/40 transition-all">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 text-xl">📊</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-1 font-heading">Sales Reports</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">View daily sales totals, top-selling items, and profit margin breakdowns.</p>
             </div>
         </div>
     </section>
 
     <!-- Installation Note -->
     <section class="max-w-3xl mx-auto px-4 mb-16">
-        <div class="p-4 sm:p-6 bg-amber-50 border border-amber-200 rounded-2xl flex items-start space-x-4">
+        <div class="p-5 bg-amber-50 border border-amber-200/80 rounded-2xl flex items-start space-x-4">
             <span class="text-2xl">💡</span>
             <div class="text-sm text-amber-900">
-                <p class="font-bold mb-1">Android Installation Tip:</p>
-                <p>When installing directly from the APK file, enable <strong>"Install from unknown sources"</strong> in your device's security settings if prompted.</p>
+                <p class="font-bold mb-1">Android Installation Note:</p>
+                <p>When installing the APK file directly, enable <strong>"Install from unknown sources"</strong> in your Android security settings if prompted.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100 py-8 text-center text-xs text-gray-500">
+    <footer class="bg-white border-t border-slate-200/60 py-8 text-center text-xs text-slate-500">
         <div class="max-w-5xl mx-auto px-4 space-y-3">
             <p>© 2026 Kashera POS. Built for Food Business Entrepreneurs.</p>
             <div class="flex justify-center space-x-4">
