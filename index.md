@@ -1,7 +1,7 @@
-
 ---
 title: "Kashera POS | Simple POS for Small Food Businesses"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
