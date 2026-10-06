@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Kashera POS - Download</title>
-    <meta property="og:title" content="Kashera POS" />
+    <title>Kashera POS | Simple POS for Small Food Businesses</title>
+    <meta property="og:title" content="Kashera POS | Simple POS for Small Food Businesses" />
     <meta property="og:description" content="Streamline your sales and stock management. Download Kashera POS for mobile." />
     <meta property="og:url" content="https://blackstorey.github.io/Kashera/" />
     <meta property="og:type" content="website" />
@@ -93,16 +94,13 @@
 
                 releases.forEach(release => {
                     release.assets.forEach(asset => {
-                        // This counts any file in your releases
                         githubDownloads += asset.download_count;
                     });
                 });
 
-                // If githubDownloads is 0, it will just show 870
                 const total = baseCount + githubDownloads;
                 countDisplay.textContent = `${total.toLocaleString()} people have downloaded this app`;
             } catch (error) {
-                // Fallback text if the GitHub API is busy
                 countDisplay.textContent = `${baseCount.toLocaleString()}+ people have downloaded this app`;
             }
         }
